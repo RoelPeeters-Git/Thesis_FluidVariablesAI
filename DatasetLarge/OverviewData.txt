@@ -1,0 +1,58 @@
+Dataset creation for training and testing in a TF-NN
+
+All Uy data are obtained on the following probelocations: 
+Probelocations: 
+252,254,256,31,258,259,260,278,216,218,219,220,221,222,233,235,237,238,239,240,241
+
+The inputlayer to the NN requires examples of 63 units. This is obtained through serializing 3 timemeasurements
+so that each examples contains timestamp (n, n-1, n-2).
+
+Training data consists of following datasample files:
+randomly chosen datafiles
+MSgradAmp freqrange fSt3.0 freq 0 tot 1.5 
+Amp is rel_Amp ie A/D, where D is diameter of cylinder
+- Amp 0.05 _ 1
+- Amp 0.05 _ 3
+- Amp 0.05 _ 4
+- Amp 0.10 _ 2
+- Amp 0.10 _ 5
+- Amp 0.15 _ 1
+- Amp 0.15 _ 2
+- Amp 0.15 _ 5
+- Amp 0.20 _ 2
+- Amp 0.20 _ 3
+- Amp 0.20 _ 4
+- Amp 0.25 _ 1
+- Amp 0.30 _ 1
+- Amp 0.30 _ 3
+- Amp 0.30 _ 5
+- Amp 0.05 _ 5
+- Amp 0.10 _ 4
+- Amp 0.15 _ 3
+
+Total training examples: 373628
+
+Test data are split in 3 sets: 1 devset of MSgradAmp data for validation during training, 
+1 testset of MSgradAmp data for final evaluation of the Model 
+and 1 testset of SWS data to check extended capability of the trained model
+
+MsGrad devset
+- Amp 0.05 _ 2
+- Amp 0.10 _ 1
+- Amp 0.25 _ 2
+- Amp 0.30 _ 4
+Total devset examples: 83795
+
+MsGrad testset
+- Amp 0.10 _ 3
+- Amp 0.15 _ 4
+- Amp 0.25 _ 3
+- Amp 0.30 _ 2
+Total testset examples: 83980
+
+SWS 
+- Amp 0.15
+- Amp 0.175
+- Amp 0.225
+- Amp 0.30
+Total testset examples: 51252

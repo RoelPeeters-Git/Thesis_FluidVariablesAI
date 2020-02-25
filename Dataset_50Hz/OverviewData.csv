@@ -1,0 +1,21 @@
+Dataset creation for training and testing in a TF-NN
+
+All Uy data are obtained on the following probelocations: 
+Probelocations: 
+252,254,256,31,258,259,260,278,216,218,219,220,221,222,233,235,237,238,239,240,241
+
+The inputlayer to the NN requires examples of 63 units. This is obtained through serializing 3 timemeasurements
+so that each examples contains timestamp (n, n-1, n-2).
+
+Training data consists of following datasample files:
+randomly chosen datafiles
+MSgradAmp freqrange fSt3.0 freq 0 tot 1.5 
+Amp is rel_Amp ie A/D, where D is diameter of cylinder
+
+
+Total training examples: 
+
+Test data are split in 3 sets: 1 devset of MSgradAmp data for validation during training, 
+1 testset of MSgradAmp data for final evaluation of the Model 
+and 1 testset of SWS data to check extended capability of the trained model
+

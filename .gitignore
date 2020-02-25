@@ -1,0 +1,11 @@
+__pycache__/
+.vscode
+DatasetLarge/UyMS_TrainData.csv
+DatasetLarge/CyMS_TrainData.csv
+TfNN/FirstSavedModel/
+TfNN/SecondSavedModel/
+TfNN/ThirdSavedModel/
+TfNN/Figure_1.jpeg
+TfNN/Figure_2.jpeg
+TfNN/Figure_3.jpeg
+plotData.py
