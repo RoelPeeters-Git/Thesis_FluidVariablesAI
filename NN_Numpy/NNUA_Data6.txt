@@ -1,0 +1,5 @@
+,0
+Modelled Function,f(t) = 0.8*t^3
+Final cost,0.00010895454638006961
+Average Training Error,0.00859333395845859
+Relative Training Error,0.03430771283805539
