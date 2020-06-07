@@ -9,3 +9,5 @@ This is the saved Tensorflow model and can be reloaded for future use.
 The folder NN_Numpy contains a Numpy implementation of a neural network and is used to demonstrate the capabilities of neural networks as universal approximator.
 The folder NN_Model_SF contains the first Tensorflow model where the relationship wake velocity profile to force coefficient is statically modelled.
 The folder NN_Model_AugmInput contains the second Tensorflow model which models explicit dynamics by using the extra 2 delayed timesteps as input to the model.
+
+The repository will be made read-only available. 
