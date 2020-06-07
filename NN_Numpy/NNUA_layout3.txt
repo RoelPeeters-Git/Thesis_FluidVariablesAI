@@ -1,0 +1,6 @@
+,0,1,2
+Dimensions,1,100,1.0
+Learning rate,0.01,,
+Activation function,ReLU,linear,
+Training epochs,2000,,
+Optimizer,Gradient Descent,,

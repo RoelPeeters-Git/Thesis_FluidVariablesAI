@@ -1,0 +1,16 @@
+Model1,Value
+Model activations,ReLU-Linear
+Number of training samples,18995
+Number of model parameters,1355
+Ratio training samples-parameters,14.018450184501845
+Model loss on test data,0.051118895704690075
+Model RMSE on test data,0.14628685
+Model Absolute error on test data,0.10514937
+Number of test samples,3799
+Average Error,-0.03687717179658788
+Standard Deviation of Error,0.14156241354771967
+Average Absolute Error,0.10514941543057872
+Maximum Error,0.683606863021851
+Loss,0.021399842729170667
+Relative Error,0.011869305628990424
+Relative RMSE,0.10894634288947208

@@ -116,17 +116,29 @@ Amp0p05_model.save('Model_Amp0p05_100', save_format='tf')
 
 # %% ===== Analyzing the model results =====
 
+hist = pd.read_csv('Amp0p05_history.csv')
+plt.figure(1)
 plt.semilogy(hist.index, hist['mean_squared_error'], 'k', label='Train_MSE')
 plt.semilogy(hist.index, hist['val_mean_squared_error'], 'b', label='Dev_MSE')
 plt.xlabel('Epoch')
 plt.ylabel('MSE')
 plt.title('relAmp0p05_model')
 plt.legend()
+plt.savefig('Training_history.png')
+
 
 # %% ===== Evaluate the model with the testset =====
 
+Amp0p05_model = K.models.load_model('Model_Amp0p05_100/')
 predics = Amp0p05_model.predict(XTest)
 N = len(YTest)
-MSE = 1/N * np.sum(np.abs(YTest-predics)**2)
-relMSE = MSE / np.sum(np.abs(YTest)**2)
+error = (YTest-predics)
+MSE = 1/N * np.sum(np.abs(error)**2)
+relMSE = MSE / (1/N*np.sum(np.abs(YTest)**2))
 print(f'Absolute error = {MSE}, Relative error = {relMSE}')
+
+plt.figure(2)
+plt.plot(error)
+plt.xlabel('')
+plt.ylabel('Error values')
+plt.savefig('EvaluatedError.png')

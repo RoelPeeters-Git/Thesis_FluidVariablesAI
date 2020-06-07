@@ -10,3 +10,5 @@ TfNN/Figure_2.jpeg
 TfNN/Figure_3.jpeg
 plotData.py
 ObsoleteCode/
+*.csv
+*.tex
