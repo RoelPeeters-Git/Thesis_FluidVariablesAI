@@ -127,11 +127,11 @@ Model1Perfo.to_latex('Model1Perfo.tex', header=['Value'])
 # ===== plot of the predictions and error =====
 sns.set(context='paper', style='whitegrid')
 
-fig, axs = plt.subplots()
-axs.plot(time[750:2750], ftest[750:2750], 'b--', label='cy test values')
-axs.plot(time[750:2750], f_pred[750:2750], 'r:', label='cy predicted values')
-axs.plot(time[750:2750], error[750:2750], 'k', label='Error')
+fig, axs = plt.subplots(2,1,sharex=True)
+axs[1].plot(time[750:2750], ftest[750:2750], 'b--', label='cy true values')
+axs[2].plot(time[750:2750], f_pred[750:2750], 'r:', label='cy predicted values')
+axs[2].plot(time[750:2750], error[750:2750], 'k', label='Error')
 axs.set(xlabel='Time (s)', ylabel='C_y/Error')
 
-fig.suptitle('Output of Trained Model', fontsize=14)
+fig.suptitle('Predictions and error of the trained model', fontsize=14)
 fig.legend(loc='upper right')
