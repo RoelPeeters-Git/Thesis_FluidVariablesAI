@@ -9,5 +9,6 @@ TfNN_smalldataset/
 ObsoleteCode/
 SimpleNN/
 Figures_NA/
+MISO_NN.py 
 *.csv
 *.tex
