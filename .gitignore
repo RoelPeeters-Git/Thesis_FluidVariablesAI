@@ -9,6 +9,11 @@ TfNN_smalldataset/
 ObsoleteCode/
 SimpleNN/
 Figures_NA/
+Figures_ISMA/
+
 MISO_NN.py 
 *.csv
 *.tex
+Data_shift_plus_Linear_models.py
+Plot_displacement.py
+NN_models_ISMA/changefiles.py
