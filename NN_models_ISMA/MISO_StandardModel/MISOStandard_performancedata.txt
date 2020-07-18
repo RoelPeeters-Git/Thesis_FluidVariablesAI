@@ -1,0 +1,6 @@
+,Value
+Relative RMSE on training data,0.06802577525377274
+Relative RMSE on test data,0.0850733079491424
+Linear test relative RMSE on training data,0.30258938859381523
+Linear test relative RMSE on test data,0.2906482142066217
+Maximum error on predictions,0.9105401039123535

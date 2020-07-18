@@ -1,0 +1,11 @@
+,Value
+Relative RMSE on training data,0.5924724366315106
+Relative RMSE force on training data,0.5917918441011
+Relative RMSE disp on training data,0.926706440699387
+Relative RMSE on test data,0.9666525618835152
+Relative RMSE on the predicted force,0.966717508179596
+Relative RMSE on the predicted displacement,0.9248319555898523
+Linear test relative RMSE on training data,0.864767871547325
+Linear test relative RMSE on test data,1.0336431280776646
+Linear test relative RMSE on predicted force,1.0343853748312215
+Linear test relative RMSE on predicted displacement,0.3184548077032094

@@ -1,0 +1,5 @@
+Model11_2,Value
+Relative RMSE on training data,0.0633460925752376
+Relative RMSE on test data,0.07640078816276304
+Linear test relative RMSE on training data,0.30008858874811906
+Linear test relative RMSE on test data,0.2853990872459073
