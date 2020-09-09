@@ -144,6 +144,6 @@ plt.plot(time, fpred, 'r--', label='Predicted force coefficient')
 plt.plot(time, force_error, 'k', label='Error of the predictions')
 plt.xlabel('Time (s)', fontsize=22)
 plt.ylabel('Force coefficient / Error', fontsize=20)
-# plt.suptitle('Force coefficient on the the cylinder (y-direction)',
+# plt.suptitle('Force coefficient on the cylinder (y-direction)',
 #            fontsize=28)
 plt.show()

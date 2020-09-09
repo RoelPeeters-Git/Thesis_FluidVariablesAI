@@ -43,7 +43,7 @@ def linear_reg_check(regressor, output):
 
 # %% ===== Get data =====
 
-hist = pd.read_csv('MIMO_disp/Model9/hist9_4.txt', index_col=0)
+hist = pd.read_csv('MIMO_disp/hist9_5.csv', index_col=0)
 
 Utrainset = pd.read_csv('Utrainset.csv', header=None).to_numpy()
 fytrainset = pd.read_csv('fytrainset.csv', header=None).to_numpy()
@@ -75,10 +75,10 @@ fytestset = pd.read_csv('fytestset.csv', header=None).to_numpy()
 # %% ===== Select best performing model =====
 
 metric = {'rel_rmse': rel_rmse}
-model = tf.keras.models.load_model('MIMO_disp/Model9/Model9_4',
+model = tf.keras.models.load_model('MIMO_disp/Model9_5',
                                    custom_objects=metric)
-tf.keras.utils.plot_model(model, 'MIMO_dispModel.png', show_shapes=True,
-                          show_layer_names=True)
+# tf.keras.utils.plot_model(model, 'MIMO_dispModel.png', show_shapes=True,
+#                           show_layer_names=True)
 
 # %% ===== Perform check of linear regression =====
 
